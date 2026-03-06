@@ -148,8 +148,42 @@ ul {
 /* 
 =============== 공통 메인 섹션 ===============
 */
+.search-box{
+    margin-top:20px;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.search-box select,
+.search-box input,
+.search-box button {
+  border: none;
+  outline: none;
+}
+
+.btn-search{
+  background-color: #f47c2a;
+  width: 60px;
+  height: 30px;
+  color: white;
+}
 
 .page-list{
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  gap: 4px;
+}
+.page-list button{
+  width: 30px;
+  height: 30px;
+  margin: 2px 0;
+  background-color: white;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px
+}
+
+.page-btn{
+  color: #f47c2a;
 }
