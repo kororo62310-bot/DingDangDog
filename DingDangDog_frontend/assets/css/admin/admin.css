@@ -34,16 +34,19 @@ ul {
 /* 
 =============== 사이드바 ===============
 */
-
+.admin-main-container {
+  width: 1440px;
+  height: 1028px;
+}
 .admin-sidebar {
   font-family: "HannaPro";
-  height: 100vh;
+  height: 100%;
   width: 270px;
   background-color: white;
   border-right: 3px solid #f47c2a;
   display: flex;
   flex-direction: column;
-  /* position: fixed; */
+  position: sticky;
 }
 
 .admin-sidebar-header {
