@@ -27,9 +27,13 @@
   text-align: left;
   flex-grow: 1;
 }
-.black-reason {
-  max-width: 100%;
-  word-break: break-all;
+.download-btn {
+  background-color: #f47c2a;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 3px 6px;
 }
 .btn-container {
   padding-top: 40px;
@@ -39,7 +43,7 @@
   justify-content: space-between;
 }
 .return-btn,
-.blacklist-cancel-btn {
+.confirm-btn {
   background-color: #f47c2a;
   border: none;
   color: white;

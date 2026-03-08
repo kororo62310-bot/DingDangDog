@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>대시보드</title>
-    <link rel="stylesheet" href="../../../assets/css/admin/admin.css" />
+    <link rel="stylesheet" href="/assets/css/admin/admin.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/admin/dashboard/admin_dashboard.css"
+    />
   </head>
   <body>
     <!-- 전체화면 -->
@@ -15,11 +19,113 @@
       <section class="admin-main-section">
         <!-- 페이지 상단 (제목, 버튼) -->
         <div class="admin-main-section-header">
-          <div class="admin-title">title</div>
+          <div class="admin-title">대시보드</div>
         </div>
         <!-- 페이지 컨텐츠 -->
-        <div class="admin-main-content admin-box-shadow">
+        <div class="admin-main-content">
           <!-- 테이블등 정보 -->
+          <ul class="dashboard-row">
+            <li>
+              <article class="dashboard-box admin-box-shadow">
+                <div class="box-header">
+                  <span class="box-title">회원 목록</span>
+                  <button id="user-link-btn" class="link-btn">+</button>
+                </div>
+                <div class="box-content">
+                  <div class="dashboard-list-row userlist">
+                    <div class="user-number">회원번호</div>
+                    <div class="user-id">아이디</div>
+                    <div class="user-name">이름</div>
+                    <div class="user-nickname">닉네임</div>
+                  </div>
+
+                  <div class="dashboard-list-row userlist">
+                    <div class="user-number">50</div>
+                    <div class="user-id">Zzang12</div>
+                    <div class="user-name">짱구</div>
+                    <div class="user-nickname">z123z</div>
+                  </div>
+
+                  <div class="dashboard-list-row userlist">
+                    <div class="user-number">50</div>
+                    <div class="user-id">Zzang12</div>
+                    <div class="user-name">짱구</div>
+                    <div class="user-nickname">z123z</div>
+                  </div>
+
+                  <div class="dashboard-list-row userlist">
+                    <div class="user-number">50</div>
+                    <div class="user-id">Zzang12</div>
+                    <div class="user-name">짱구</div>
+                    <div class="user-nickname">z123z</div>
+                  </div>
+
+                  <div class="dashboard-list-row userlist">
+                    <div class="user-number">50</div>
+                    <div class="user-id">Zzang12</div>
+                    <div class="user-name">짱구</div>
+                    <div class="user-nickname">z123z</div>
+                  </div>
+
+                  <div class="dashboard-list-row userlist">
+                    <div class="user-number">50</div>
+                    <div class="user-id">Zzang12</div>
+                    <div class="user-name">짱구</div>
+                    <div class="user-nickname">z123z</div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="dashboard-box admin-box-shadow">
+                <div class="box-header">
+                  <span class="box-title">블랙리스트</span>
+                  <button id="black-link-btn" class="link-btn">+</button>
+                </div>
+                <div class="box-content"></div>
+              </article>
+            </li>
+          </ul>
+          <ul class="dashboard-row">
+            <li>
+              <article class="dashboard-box admin-box-shadow">
+                <div class="box-header">
+                  <span class="box-title">멍! 카이브 목록</span>
+                  <button id="archive-link-btn" class="link-btn">+</button>
+                </div>
+                <div class="box-content"></div>
+              </article>
+            </li>
+            <li>
+              <article class="dashboard-box admin-box-shadow">
+                <div class="box-header">
+                  <span class="box-title">멍! 케어 목록</span>
+                  <button id="care-link-btn" class="link-btn">+</button>
+                </div>
+                <div class="box-content"></div>
+              </article>
+            </li>
+          </ul>
+          <ul class="dashboard-row">
+            <li>
+              <article class="dashboard-box admin-box-shadow">
+                <div class="box-header">
+                  <span class="box-title">멍! 로그 목록</span>
+                  <button id="log-link-btn" class="link-btn">+</button>
+                </div>
+                <div class="box-content"></div>
+              </article>
+            </li>
+            <li>
+              <article class="dashboard-box admin-box-shadow">
+                <div class="box-header">
+                  <span class="box-title">문의 목록</span>
+                  <button id="inquiry-link-btn" class="link-btn">+</button>
+                </div>
+                <div class="box-content"></div>
+              </article>
+            </li>
+          </ul>
         </div>
         <!-- 페이지 하단 (검색, 페이지네이션) -->
         <div class="admin-main-section-footer"></div>

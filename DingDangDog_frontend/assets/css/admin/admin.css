@@ -34,7 +34,9 @@ ul {
 /* 
 =============== 사이드바 ===============
 */
-.admin-main-container {
+
+/* --수정전-- */
+/* .admin-main-container {
   width: 1440px;
   height: 1028px;
 }
@@ -47,6 +49,17 @@ ul {
   display: flex;
   flex-direction: column;
   position: sticky;
+} */
+.admin-sidebar {
+  font-family: "HannaPro";
+  height: 100vh;
+  width: 270px;
+  background-color: white;
+  border-right: 3px solid #f47c2a;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 5;
 }
 
 .admin-sidebar-header {
@@ -138,9 +151,18 @@ ul {
 .admin-main-container {
   display: flex;
 }
-.admin-main-section {
+
+/* --수정전-- */
+/* .admin-main-section {
   height: 100vh;
   width: 100%;
+  padding: 0 40px;
+} */
+
+.admin-main-section {
+  margin-left: 270px;
+  height: 100vh;
+  width: calc(100% - 270px);
   padding: 0 40px;
 }
 
@@ -184,6 +206,7 @@ ul {
   color: white;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  cursor: pointer;
 }
 /* 
 ---- 검색창 ----
