@@ -6,7 +6,7 @@
 .admin-list-row,
 .admin-list-header {
   display: grid;
-  grid-template-columns: 120px 1fr 250px 300px 300px 300px;
+  grid-template-columns: 120px 1fr 250px 300px 300px;
   padding-left: 10px;
   line-height: 35px;
   text-align: center;
@@ -51,7 +51,7 @@
   color: white;
 }
 
-.confirm-wait {
+.response-wait {
   color: red;
   font-weight: bold;
 }
