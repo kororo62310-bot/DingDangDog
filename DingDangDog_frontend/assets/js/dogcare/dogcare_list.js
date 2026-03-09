@@ -1,6 +1,13 @@
+
+// 봉사 등록
+RegistBtn.addEventListener("click", function(){
+  location.href="./dogcare_write.html";
+});
+
+// 페이지네이션
 document.addEventListener("DOMContentLoaded", function () {
 
-  const rows = Array.from(document.querySelectorAll(".admin-dogcare-list-row"));
+  const rows = Array.from(document.querySelectorAll(".dogcare-list-row"));
 
   const rowsPerPage = 15; // 한 페이지 게시글
   const pageCount = 5; // 페이지 버튼 개수
@@ -71,10 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const keyword = searchInput.value.trim();
     const type = searchSelect.value;
     filteredRows = rows.filter(row => {
-      const id = row.querySelector(".dogcare-id").textContent;
-      const nickname = row.querySelector(".dogcare-nickname").textContent;
-      if (type === "닉네임") return id.includes(keyword);
-      if (type === "제목") return nickname.includes(keyword);
+      const id = row.querySelector(".dogcare-nickname").textContent;
+      const nickname = row.querySelector(".dogcare-date").textContent;
+      if (type === "보호소명") return id.includes(keyword);
+      if (type === "봉사날짜") return nickname.includes(keyword);
       return true;
     });
     currentPage = 1;
